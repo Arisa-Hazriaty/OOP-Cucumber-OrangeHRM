@@ -17,7 +17,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 7016575194,
+  "duration": 8471029803,
   "status": "passed"
 });
 formatter.scenario({
@@ -53,29 +53,29 @@ formatter.match({
   "location": "LoginOrangesSteps.user_open_the_web_page()"
 });
 formatter.result({
-  "duration": 514340308,
+  "duration": 679925366,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginOrangesSteps.user_input_invalid_username_and_password()"
 });
 formatter.result({
-  "duration": 1181298395,
+  "duration": 1150183357,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginOrangesSteps.user_see_error_message()"
 });
 formatter.result({
-  "duration": 30593587,
+  "duration": 30815432,
   "status": "passed"
 });
 formatter.after({
-  "duration": 112845197,
+  "duration": 202175402,
   "status": "passed"
 });
 formatter.before({
-  "duration": 4921513961,
+  "duration": 5076804730,
   "status": "passed"
 });
 formatter.scenario({
@@ -111,7 +111,7 @@ formatter.match({
   "location": "LoginOrangesSteps.user_open_the_web_page()"
 });
 formatter.result({
-  "duration": 163549379,
+  "duration": 154850922,
   "status": "passed"
 });
 formatter.match({
@@ -128,18 +128,18 @@ formatter.match({
   "location": "LoginOrangesSteps.user_input_valid_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 3849026427,
+  "duration": 3807305805,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginOrangesSteps.user_see_dashboard()"
 });
 formatter.result({
-  "duration": 182632456,
+  "duration": 688608151,
   "status": "passed"
 });
 formatter.after({
-  "duration": 120230255,
+  "duration": 213568772,
   "status": "passed"
 });
 });
