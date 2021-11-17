@@ -1,7 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: step_definitions.RunCukesTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.049 s <<< FAILURE! - in step_definitions.RunCukesTest
-step_definitions.RunCukesTest.initializationError  Time elapsed: 0.001 s  <<< ERROR!
-cucumber.runtime.DuplicateStepDefinitionException: Duplicate step definitions in step_definitions.LoginOranges.user_open_the_web_page() in file:/Users/arisahazriaty/eclipse-workspace/OrangeHRM/target/test-classes/ and step_definitions.LoginOranges.user_open_the_web_page1() in file:/Users/arisahazriaty/eclipse-workspace/OrangeHRM/target/test-classes/
-
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 72.331 s - in step_definitions.RunCukesTest

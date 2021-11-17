@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>Project Name</td>
+                          <td>1</td>
+                        <td>10 Sep 2021, 02:30</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">AddEmployeeStep.created(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="56816507">056ms</td>
+                <td class="duration" data-value="56816507">056ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">AddEmployeeStep.inputNameEmployee(String,String,String)</td>
+                <td>1</td>
+                <td class="duration" data-value="252641566">252ms</td>
+                <td class="duration" data-value="252641566">252ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">AddEmployeeStep.loginOrangeHRM(String,String)</td>
+                <td>1</td>
+                <td class="duration" data-value="5385342506">5s 385ms</td>
+                <td class="duration" data-value="5385342506">5s 385ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">AddEmployeeStep.openEmployeePage()</td>
+                <td>1</td>
+                <td class="duration" data-value="2670565918">2s 670ms</td>
+                <td class="duration" data-value="2670565918">2s 670ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">AddEmployeeStep.uploadPhoto(String)</td>
+                <td>1</td>
+                <td class="duration" data-value="5834175555">5s 834ms</td>
+                <td class="duration" data-value="5834175555">5s 834ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">AddUserStep.loginOrange(String,String)</td>
+                <td>1</td>
+                <td class="duration" data-value="5149132328">5s 149ms</td>
+                <td class="duration" data-value="5149132328">5s 149ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">AddUserStep.openUserPage()</td>
+                <td>1</td>
+                <td class="duration" data-value="2139243980">2s 139ms</td>
+                <td class="duration" data-value="2139243980">2s 139ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">AddUserStep.saveUser()</td>
+                <td>1</td>
+                <td class="duration" data-value="1600580652">1s 600ms</td>
+                <td class="duration" data-value="1600580652">1s 600ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">AddUserStep.setName(String,String)</td>
+                <td>1</td>
+                <td class="duration" data-value="734576873">734ms</td>
+                <td class="duration" data-value="734576873">734ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">AddUserStep.setStatusPassword(String,String)</td>
+                <td>1</td>
+                <td class="duration" data-value="5931927782">5s 931ms</td>
+                <td class="duration" data-value="5931927782">5s 931ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">AddUserStep.setTherRole()</td>
+                <td>1</td>
+                <td class="duration" data-value="653536645">653ms</td>
+                <td class="duration" data-value="653536645">653ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Hooks.embedScreenshot(Scenario)</td>
+                <td>4</td>
+                <td class="duration" data-value="204705">000ms</td>
+                <td class="duration" data-value="51176">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Hooks.openBrowser()</td>
+                <td>4</td>
+                <td class="duration" data-value="30571165107">30s 571ms</td>
+                <td class="duration" data-value="7642791276">7s 642ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginOrangesSteps.user_input_invalid_username_and_password()</td>
+                <td>1</td>
+                <td class="duration" data-value="1177010382">1s 177ms</td>
+                <td class="duration" data-value="1177010382">1s 177ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginOrangesSteps.user_input_valid_username_and_password(String,String)</td>
+                <td>1</td>
+                <td class="duration" data-value="4734193583">4s 734ms</td>
+                <td class="duration" data-value="4734193583">4s 734ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginOrangesSteps.user_open_the_web_page()</td>
+                <td>2</td>
+                <td class="duration" data-value="354820629">354ms</td>
+                <td class="duration" data-value="177410314">177ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginOrangesSteps.user_see_dashboard()</td>
+                <td>1</td>
+                <td class="duration" data-value="658841479">658ms</td>
+                <td class="duration" data-value="658841479">658ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginOrangesSteps.user_see_error_message()</td>
+                <td>1</td>
+                <td class="duration" data-value="28341997">028ms</td>
+                <td class="duration" data-value="28341997">028ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>18</td>
+              <td>25</td>
+              <td class="duration">1m 7s 933ms</td>
+              <td class="duration">2s 717ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

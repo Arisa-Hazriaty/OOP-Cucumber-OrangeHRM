@@ -1,4 +1,4 @@
-@LoginValidInvalid @Orangehrm
+@LoginValidInvalid @development
 Feature: Login
 
 @NegativeCase

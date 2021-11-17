@@ -1,6 +1,7 @@
 package utilities;
 
-import org.openqa.selenium.By;
+import java.util.List;
+
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
@@ -36,6 +37,15 @@ public class BaseClass {
 	protected void WaitUntilElementIsVisible(WebElement webElement) {
 
         wait.until(ExpectedConditions.visibilityOf(webElement));
+    }
+	
+	protected void WaitUntilElementIsClickable(WebElement webElement) {
+
+        wait.until(ExpectedConditions.elementToBeClickable(webElement));
+    }
+	protected void WaitUntilListElementIsVisible(List<WebElement> webElementList) {
+
+        wait.until(ExpectedConditions.visibilityOfAllElements(webElementList));
     }
 	
 	

@@ -7,11 +7,10 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		tags = {"@LoginValidInvalid"},
+		tags = {"@development"},
 		features = {"classpath:Features/"},
 		glue = { "classpath:step_definitions"},
-		plugin = {"pretty", "html:target/cucumber-html-report.html","json:target/cucumber.json", "html:target/cucumber-reports"}
-		)
+		plugin= {"pretty","html:target/site/cucumber-pretty","json:target/cucumber/cucumber.json"})
 
 public class RunCukesTest{
 	

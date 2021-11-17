@@ -7,10 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import utilities.BaseClass;
 
-public class UserManagementPage {
-	public class DashboardPage extends BaseClass{
+public class UserManagementPage extends BaseClass {
 		
-		public DashboardPage(WebDriver webDriver) {
+	public UserManagementPage(WebDriver webDriver) {
 			super(webDriver);
 			PageFactory.initElements(webDriver, this);
 		}
@@ -27,17 +26,24 @@ public class UserManagementPage {
 		@FindBy(id = "btnAdd")
 		WebElement buttonAdd;
 		
-		public void clickLogin() {
-			mainMenuFirstLevel.click();
+		@FindBy(xpath = "//a[.='Username']")
+		WebElement Usernamelist;
+		
+		public void clickUserManagement() {
 			menuUserManagement.click();
 			menuViewSystemUsers.click();
 			buttonAdd.click();
 			
 		}
 		
+		public void verifyUsernameShow()
+		{
+			   WaitUntilElementIsVisible(Usernamelist);
+			   Usernamelist.isDisplayed();
+		}
 
 		
 		
 		
 }
-}
+

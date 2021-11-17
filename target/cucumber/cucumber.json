@@ -1,0 +1,531 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8906012807,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "User input employee with correct data",
+        "description": "",
+        "id": "add-employee;user-input-employee-with-correct-data;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 119452,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5649849532,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User already login with \"Admin\" as username and \"admin123\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 25
+                },
+                {
+                  "val": "admin123",
+                  "offset": 49
+                }
+              ],
+              "location": "AddEmployeeStep.loginOrangeHRM(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2608329913,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User Open Add Employee Page",
+            "match": {
+              "location": "AddEmployeeStep.openEmployeePage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 270697986,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User input \"arisa\" as firstName, \"hazriaty\" as middleName and \"testing\" as lastName",
+            "match": {
+              "arguments": [
+                {
+                  "val": "arisa",
+                  "offset": 12
+                },
+                {
+                  "val": "hazriaty",
+                  "offset": 34
+                },
+                {
+                  "val": "testing",
+                  "offset": 63
+                }
+              ],
+              "location": "AddEmployeeStep.inputNameEmployee(String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5727009519,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User upload photo \"arisa.jpg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "arisa.jpg",
+                  "offset": 19
+                }
+              ],
+              "location": "AddEmployeeStep.uploadPhoto(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57695116,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User \"arisa hazriaty testing\" already created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "arisa hazriaty testing",
+                  "offset": 6
+                }
+              ],
+              "location": "AddEmployeeStep.created(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@AddEmployeeesatu"
+          },
+          {
+            "line": 5,
+            "name": "@PositiveCase"
+          },
+          {
+            "line": 1,
+            "name": "@development"
+          }
+        ]
+      }
+    ],
+    "name": "Add Employee",
+    "description": "User want to Add Employee",
+    "id": "add-employee",
+    "keyword": "Feature",
+    "uri": "Features/AddEmployee.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@AddEmployeeesatu"
+      },
+      {
+        "line": 1,
+        "name": "@development"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7523579007,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "User input user with correct data",
+        "description": "",
+        "id": "adduser;user-input-user-with-correct-data;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 26998,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4856286090,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User login \"Admin\" as username and \"admin123\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 12
+                },
+                {
+                  "val": "admin123",
+                  "offset": 36
+                }
+              ],
+              "location": "AddUserStep.loginOrange(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2692472371,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User Open Add User Page",
+            "match": {
+              "location": "AddUserStep.openUserPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 693540528,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user set the Role",
+            "match": {
+              "location": "AddUserStep.setTherRole()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 714364559,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User input \"Fiona Grace\" as EmployeeName, \"valid\" Username",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fiona Grace",
+                  "offset": 12
+                },
+                {
+                  "val": "valid",
+                  "offset": 43
+                }
+              ],
+              "location": "AddUserStep.setName(String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5944336774,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User set Status ,\"P@ssw0rd123\" as Password , \"P@ssw0rd123\" as ConfirmPassword",
+            "match": {
+              "arguments": [
+                {
+                  "val": "P@ssw0rd123",
+                  "offset": 18
+                },
+                {
+                  "val": "P@ssw0rd123",
+                  "offset": 46
+                }
+              ],
+              "location": "AddUserStep.setStatusPassword(String,String)"
+            },
+            "matchedColumns": [
+              4,
+              5
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1664634116,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user see Username List Pages",
+            "match": {
+              "location": "AddUserStep.saveUser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@AddUser"
+          },
+          {
+            "line": 4,
+            "name": "@PositiveCase"
+          },
+          {
+            "line": 1,
+            "name": "@development"
+          }
+        ]
+      }
+    ],
+    "name": "AddUser",
+    "description": "",
+    "id": "adduser",
+    "keyword": "Feature",
+    "uri": "Features/AddUser.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@AddUser"
+      },
+      {
+        "line": 1,
+        "name": "@development"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7833397634,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "username and password not match",
+        "description": "",
+        "id": "login;username-and-password-not-match",
+        "after": [
+          {
+            "result": {
+              "duration": 25677,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 174853785,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user open the web page",
+            "match": {
+              "location": "LoginOrangesSteps.user_open_the_web_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1293897786,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user input invalid username and password",
+            "match": {
+              "location": "LoginOrangesSteps.user_input_invalid_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36266555,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user see error message",
+            "match": {
+              "location": "LoginOrangesSteps.user_see_error_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@NegativeCase"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7710989555,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "username and password match",
+        "description": "",
+        "id": "login;username-and-password-match",
+        "after": [
+          {
+            "result": {
+              "duration": 37360,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 262809327,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user open the web page",
+            "match": {
+              "location": "LoginOrangesSteps.user_open_the_web_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4909962404,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user input \"admin\" as username and \"admin123\" as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 12
+                },
+                {
+                  "val": "admin123",
+                  "offset": 36
+                }
+              ],
+              "location": "LoginOrangesSteps.user_input_valid_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 966940030,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user see dashboard page",
+            "match": {
+              "location": "LoginOrangesSteps.user_see_dashboard()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@PositiveCase"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "Features/Login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@LoginValidInvalid"
+      },
+      {
+        "line": 1,
+        "name": "@development"
+      }
+    ]
+  }
+]

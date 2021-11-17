@@ -1,6 +1,13 @@
+/Users/arisahazriaty/eclipse-workspace/OrangeHRM/src/test/java/page_object/AddUserPage.java
 /Users/arisahazriaty/eclipse-workspace/OrangeHRM/src/test/java/utilities/BaseClass.java
-/Users/arisahazriaty/eclipse-workspace/OrangeHRM/src/test/java/step_definitions/RunCukesTest.java
+/Users/arisahazriaty/eclipse-workspace/OrangeHRM/src/test/java/page_object/EmployeeDetailPage.java
 /Users/arisahazriaty/eclipse-workspace/OrangeHRM/src/test/java/page_object/LoginPage.java
 /Users/arisahazriaty/eclipse-workspace/OrangeHRM/src/test/java/step_definitions/Hooks.java
-/Users/arisahazriaty/eclipse-workspace/OrangeHRM/src/test/java/page_object/DashboardPage.java
+/Users/arisahazriaty/eclipse-workspace/OrangeHRM/src/test/java/page_object/UserManagementPage.java
 /Users/arisahazriaty/eclipse-workspace/OrangeHRM/src/test/java/step_definitions/LoginOrangesSteps.java
+/Users/arisahazriaty/eclipse-workspace/OrangeHRM/src/test/java/page_object/EmployeeListPage.java
+/Users/arisahazriaty/eclipse-workspace/OrangeHRM/src/test/java/step_definitions/AddEmployeeStep.java
+/Users/arisahazriaty/eclipse-workspace/OrangeHRM/src/test/java/page_object/AddEmployeePage.java
+/Users/arisahazriaty/eclipse-workspace/OrangeHRM/src/test/java/step_definitions/RunCukesTest.java
+/Users/arisahazriaty/eclipse-workspace/OrangeHRM/src/test/java/step_definitions/AddUserStep.java
+/Users/arisahazriaty/eclipse-workspace/OrangeHRM/src/test/java/page_object/DashboardPage.java

@@ -2,6 +2,7 @@ package page_object;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -13,6 +14,8 @@ public class DashboardPage extends BaseClass{
 		super(webDriver);
 		PageFactory.initElements(webDriver, this);
 	}
+	
+    private Actions actions = new Actions(webDriver);
 	
 	@FindBy(id = "welcome")
 	WebElement welcomeMessage;
@@ -86,6 +89,20 @@ public class DashboardPage extends BaseClass{
         return true;
 		
 	}
+	
+	public void clickPIM()
+	
+	{
+		pimMenu.click();
+	}
+	
+
+	public void hoverAdmin() {
+		actions.moveToElement(adminMenu).perform();
+		
+	}
+
+
 }
 	
 
